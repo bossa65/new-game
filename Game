@@ -1,0 +1,87 @@
+from typing import Text
+
+
+print("Hello there, what is your name?")
+MyName = input()
+print (f"Cool, nice to meet you {MyName}") 
+print ("So.. You wanna play a game?")
+
+
+answer = input()
+
+goodanswers = ['yes', 'maybe' , "yes", 'fine', 'whatever',]
+
+
+while answer not in goodanswers:
+    print("Not an Option.")
+    answer = input()
+    
+if answer in goodanswers:
+    print("Good, let's begin.")
+    print("You begin your journey by waking up in the middle of a dark hallway. Your eyes are already used to the darkness around you, so you are able to spot a flashlight next to you. In the hallway, there are four directions in which you can go to. North1, South1, West1 or East1. What do you choose? (pls answer with the number 1 in front)")
+    answer = input()
+
+    #south1
+if answer== "south1":
+        print("You go South, walking in an extremley dark hallway. at the end, it turns east2 but on the floor there is a ladder that goes down1. Where do you want to go?")
+        answer = input()
+else: print('Not an Option')
+answer = input()
+
+
+
+    #south1 down1
+if answer=="down1":
+    print("You decide to go down the ladder. you descend for a while until you reach solid ground. Under your feet, you hear a crunch. When you shine your light below you, you millions of bones all over the floor. you appear to be in a great hall, but still without any light. as you begin walking across the hall, you see three doors. one on the left1, one on the right1, and one in front of you. Which door do you choose?")
+answer = input()
+    
+
+
+    #left1
+if answer=="left1":
+    print("you open the door to your left. inside, there is what appears to be various prison cells. they are all empty. you continue walking forward, until you reach another door. when you open it, you discover a small room with a table that has a giant, and some stairs. you realize that you are very thirsty. do you walk up the stairs or drink the water?")
+else: print('Not an Option')
+answer = input()
+
+
+    
+    #south1 east2
+if answer=="east2":
+    print(f"You decide to turn and go east. as you follow the corridor, you see a trail of blood on the floor leading to a medium-sized room in which there is a lit candle on a large table. the table is filled with delicious drinks and food. on the other side of the room, there is a door. do you go through the door or eat the food?")
+else: print('Not an Option')
+answer = input()
+
+    #south1 east2 food
+if answer=="eat the food food":
+    print(f"you decide to eat the delicious food. Once you finish eating, you decide to sleep there as you are tired. sadly once you started sleeping, you would not get back up again. THE END")
+else: print('Not an Option')
+answer = input()
+
+    #south1 east2 throughthedoor
+if answer=="through the door":
+    print(f"you decide to go through the door. when you step inside, the door immediately closes behind you. in front of you, there is a sword with the length of your entire body. when you grab it, you hear a rasp-sounding voice. {MyName}, please don't grab the sword, it will get mad. Too late, you already have a strong grip around it, and you can hear a horrible sound coming from your left. when you flash your light there, you see it. a 10 feet tall humanoid. but there is something off about it. It's extremely slender and has very long arms and legs. you have little time to think as it raises it's arms to strike you. do you doge it going backwards or forwards? ")
+else: print('Not an Option')
+answer = input()
+
+    #north1
+if answer=="north1":
+        print("You go north, and flash your light ahead. Sadly, you did not notice the massive pit below you. The end. bad luck, " +MyName)
+else: print('Not an Option')
+answer = input()
+
+
+
+
+    #west1
+if answer=="west1":
+        print("you decide to go West, and start walking for what feels like eternity. Finally, you reach an Altar with a book placed on top of it. There are also two corridors heading North and South. Do you want to read the book, head North or head South?")
+else: print('Not an Option')
+answer = input()
+
+
+
+    #east1
+if answer=="east1":
+        print("you go east, only to end up walking in what feels like a never ending corridor. Finally your flashlight's battery dies and you are left to be consumed by the darkness. The end. Sorry" +MyName)
+else: print('Not an Option')
+answer = input()
