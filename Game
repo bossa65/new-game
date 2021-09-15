@@ -9,7 +9,7 @@ print ("So.. You wanna play a game?")
 
 answer = input()
 
-goodanswers = ['yes', 'maybe' , "yes", 'fine', 'whatever',]
+goodanswers = ['yes', 'maybe' , "yes", 'fine', 'whatever',"ye","of course"]
 
 
 while answer not in goodanswers:
@@ -33,7 +33,9 @@ answer = input()
     #south1 down1
 if answer=="down1":
     print("You decide to go down the ladder. you descend for a while until you reach solid ground. Under your feet, you hear a crunch. When you shine your light below you, you millions of bones all over the floor. you appear to be in a great hall, but still without any light. as you begin walking across the hall, you see three doors. one on the left1, one on the right1, and one in front of you. Which door do you choose?")
+else: print('Not an Option')
 answer = input()
+
     
 
 
@@ -52,7 +54,7 @@ else: print('Not an Option')
 answer = input()
 
     #south1 east2 food
-if answer=="eat the food food":
+if answer=="eat the food":
     print(f"you decide to eat the delicious food. Once you finish eating, you decide to sleep there as you are tired. sadly once you started sleeping, you would not get back up again. THE END")
 else: print('Not an Option')
 answer = input()
@@ -60,6 +62,36 @@ answer = input()
     #south1 east2 throughthedoor
 if answer=="through the door":
     print(f"you decide to go through the door. when you step inside, the door immediately closes behind you. in front of you, there is a sword with the length of your entire body. when you grab it, you hear a rasp-sounding voice. {MyName}, please don't grab the sword, it will get mad. Too late, you already have a strong grip around it, and you can hear a horrible sound coming from your left. when you flash your light there, you see it. a 10 feet tall humanoid. but there is something off about it. It's extremely slender and has very long arms and legs. you have little time to think as it raises it's arms to strike you. do you doge it going backwards or forwards? ")
+else: print('Not an Option')
+answer = input()
+
+    #south1 east2 throughthedoor backwards
+if answer=="backwards":
+    print("you jump backwards, doging it's attack. your flashlight falls to the floor. the beast gets it's long arm stuck in the hole it made in the floor. do you cut it's arm or aim to the head?")
+else: print('Not an Option')
+answer = input()
+
+    #south1 east2 throughthedoor backwards cutitsarm
+if answer=="cut it's arm":
+    print(f"you attempt to cut it's arm, but you forgor it had another one. the last thing you see is a hand coming straight at your face. The end")
+else: print('Not an Option')
+answer = input()
+
+    #south1 east2 throughthedoor backwards aimtothehead
+if answer=="aim to the head":
+    print("you slam the sword against the monster's head. you hear a horrible sound as the creature seems to be screaming. then, you quickly grab the flashlight and see where the monster is. you approach it, and cut it's head off. blood starts pouring everywhere. in the pool of blood, you see a golden key. you put it in your pocket. ahead, there is a door with a keyframe in it, do you open the door? ")
+else: print('Not an Option')
+answer = input()
+
+    #south1 east2 throughthedoor backwards aimtothehead openthedoor ENDING 1
+if answer=="open the door":
+    print(f"you open the door. suddenly, you cover your eyes as a bright ray of sunshine blinds you. finally, YOU WIN, {MyName}. i hope you enjoyed this short game!")
+else: print('Not an Option')
+
+
+    #south1 east2 throughthedoor forwards
+if answer=="forwards":
+    print(f"you jump forwards, only to have the massive hand destroy you. The end. why would you go forwards anyway?")
 else: print('Not an Option')
 answer = input()
 
